@@ -1,0 +1,247 @@
+
+/* Global declarations */
+/*----------------------------------------------- Modify default property of tags (reset CSS)------------------------------------------------------*/
+html{
+	height:100%;
+}
+body
+{
+    background: url(images/_bg-top.png) repeat-x #085D89;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    color: #126499;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+	height:100%;
+}
+
+img
+{
+    border: 0;
+    vertical-align: top;
+}
+
+ul
+{
+    list-style-type: none;
+}
+
+h1, h2, h3, h4, h5, h6
+{
+    clear: both;
+    font-family: "Modata" , Tahoma, Arial, sans-serif;
+    font-weight: normal;
+}
+input, textarea, select {
+    margin-right: -4px;
+    margin-top: -2px;
+    padding: 0;
+}
+/*---------------------------------default property modification region END----------------------------------------------*/
+.top{ 
+	font-size: 12px;
+    font-weight: bold;
+    height: 20px;
+    letter-spacing: 1px;
+    line-height: 24px;
+    padding: 7px;
+    text-align: right;
+}
+.menu{
+	/*background: none repeat scroll 0 0 #141414;*/
+    color: #F8FCFF;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+    height: 40px;
+    line-height: 45px;
+    padding-left: 5px;
+}
+/*------------------container box------------------------------*/
+.wrapper{
+	position:absolute;
+	top:80px;
+	left:0;
+	right:0;
+	bottom:20px;
+}
+.box{
+	background:#f9f9f9;
+	border: 2px solid #2A3333;
+    border-radius: 5px;
+    height: 49%;
+    margin: 0.2%;
+	color:#333;
+	overflow-y: auto;
+}
+/*----------------------toolbar Start-------------------------*/
+.toolbar
+{
+    /*background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAAAYCAYAAABKtPtEAAAAcElEQVR42u3YYQYAIBiD4d3/KN0pSSRJJImkdZB947nA+3NwzlEZKD4LYAEsgHiA9x6V4d5LZTjnUBn23lSGtRaVYc5JZRhjUBl671SG1hqVodZKZSilUBlyzlSGlBKVIcZIZQghUBm891RmAdRv8Q8+U3zLFCicDAAAAABJRU5ErkJggg==") repeat-x scroll 0 0 transparent;*/
+	/*background:#55A6DD; *blue*/
+	/*background:#7BBF6A; *green*/
+	background:#525252;
+    height: 23px; 	
+	overflow:hidden; /*position:relative;*/
+	background-position:bottom;
+	border-radius: 3px 3px 0px 0px;
+	font-weight:bold;
+	color:#fff;
+}
+.toolbar span{
+	line-height: 22px;
+    margin: 0 5px;
+	font-size: 13px;
+}
+.toolbarButton
+{
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAAWCAYAAADq8U2pAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAACxJREFUeNpiWLVqFdf///+5WBgYGMSBmIEmDHYY4yWM8YIIEWIUPwIxAAIMABaGD2C3Iu2JAAAAAElFTkSuQmCC") no-repeat scroll center right transparent;
+    cursor: pointer;
+    display: inline;
+    float: right; /*right side buttons*/
+    font-size: 9pt;
+    height: 24px;
+    margin-right: 0px;
+    padding: 0 3px;
+    position: relative;
+}
+.toolbarText{
+	line-height: 20px;
+    padding: 0px 3px 1px 6px;
+}
+.btnAlignment
+{
+    float: left !important; /*left side buttons */
+}
+.bgPosition{
+	background-position:left;
+}
+.toolbarButton:active
+{
+   background:#333;
+}
+/*-----------------------toolbar End----------------------------*/
+
+/*----------------------content Start----------------------------*/
+.content
+{
+    background: none repeat scroll 0 0 #FFFFFF;
+    padding: 2px;
+    z-index: 1;
+}
+/*--------------------------content End-----------------------------------*/
+/*---------footer-----------------*/
+.footer{ 
+	height:20px;
+	text-align:center;
+	font-size:11px;
+	color:#aaa;
+}
+/*----------------------------------*/
+/*-------------table design(value and properties)--------*/
+.themeTable
+{
+    width: 100%;
+    font-size: 12px;
+    border-collapse: collapse;
+    margin-left: 0;
+}
+.themeTable thead{
+	/*background:#E0EFF9; *blue*/
+	/*background:#D7EFC6; *green*/
+	background:#F3F3F3;
+}
+.themeTable td
+{
+    border-top: 1px dotted #f9f9f9;
+}
+.themeTable th
+{
+    font-weight:bold;
+}
+
+/*manage col functionality*/
+
+table{
+	width:100%;
+}
+table th, table td{
+	border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    padding: 5px 10px;
+    text-align: left;
+}
+/*simple table*/
+.simpleTbl td{
+	border-right: 0 none;
+	border-bottom: 1px solid #ddd;
+    font-size: 12px;
+    padding: 5px 10px;
+	color: #333333;
+}
+.simpleTbl td input[type='checkbox']{
+	margin: 0px 0px 0 -1px;
+    vvertical-align: middle;
+}
+.simpleTbl td label{
+	display: inline-block;
+    font-size: 11px;
+    margin: 5px 10px;
+    padding: 5px 0;
+    vertical-align: baseline;
+}
+.simpleTbl tfoot td{
+	padding:5px;
+}
+	.simpleTbl tfoot td input[type='button']{
+		margin: 0 5px 0 0;
+		cursor:pointer;
+	}
+.simpleTbl td .colSpan{
+	color: #CC3502;
+	cursor: pointer;
+	padding: 2px 10px !important;
+	height: 14px;
+	line-height: 15px !important;
+	display: block;
+	margin-left: 10px;
+	font-weight: normal;
+	text-align: center;
+}
+.simpleTbl td .colSpan span{ padding:0; line-height: 14px;}
+.hdStyle{
+	color: #025CB7  !important;
+}
+.simpleTbl tbody tr:hover{
+	background:#FF9;
+}
+.currentCol{
+	background:#ff6;
+}
+/*ui dialog box style edit*//* ui dialog buttons*/
+.uiDialog, .ui-dialog-buttonpane{ padding:0 !important; }
+
+.ui-dialog-buttonpane button{ margin: 3px 3px 1px 0 !important;}
+.ui-dialog-buttonpane button span{ padding:0.2em 1em !important;}
+.ui-widget-header {
+    background: none repeat scroll 0 0 #06527F !important;
+    border: 1px solid #06527F!important;
+    color: #FFFFFF;
+    font-weight: bold;
+	border-radius: 2px !important;
+}
+
+/*hide and show buttons in footer*/
+.dialogueBtn{
+	height: 27px;
+    padding: 6px 0 0;
+	text-align:right;
+}
+.dialogueBtn input{
+	padding:3px 10px !important;
+	font-weight: normal !important;
+}
+/*--------------------------------------------------------*/
+
